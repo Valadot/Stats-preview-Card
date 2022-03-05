@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.contend-head {
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+}
+
+.contend-bottom {
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 0 0 10px 10px;
+    height: 470px;
+}
+.image,
+.text,
+.stats {
+    width: 330px;
+}
+
+.image {
+    background-image: url(./images/image-header-mobile.jpg);
+    background-size: 340px 280px;
+    background-repeat: no-repeat;
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode: multiply;
+    height: 220px;
+    border-radius: 10px 10px 0 0;
+}
+
+.headline {
+    padding-top: 20px;  
+    width: 230px;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 700;  
+}
+
+.text {
+    width: 270px;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 700;  
+    opacity: 50%;
+    line-height: 1.5em;
+}
+
+.stats {
+    font-family: 'Inter', sans-serif;
+    font-size: 400;  
+}
+
+.stats span {
+    display: block;
+    font-size: 11px;
+    font-family: 'Inter', sans-serif;
+    font-size: 700;
+    letter-spacing: 2px;
+    opacity: 50%;
+}
+
+@media screen and (min-width: 1400px){
+    .container{
+        flex-direction: row-reverse;
+    }
+    .contend-head{
+        height: 32.5vh;
+        background-size: 30%;
+    }
+    .image {
+        height: 100%;
+        background-size: cover;
+        width: 400px;
+        border-radius: 0 10px 10px 0;
+        background-position: center;
+    }
+    .contend-bottom{
+        width: 450px;
+        height: 32.5vh;
+        border-radius: 10px 0 0 10px;
+    }
+    .headline {
+        width: 300px;
+        text-align: left;
+        margin-left: 4em;
+        font-size: 18px;
+    }
+    .text {
+        text-align: left;
+        margin-left: 6.5em;
+        font-size: 11px;
+    }
+
+    .stats {
+        word-spacing: 20px;
+        margin-left: 40px;
+    }
+    .stats h2{
+        text-align: left;
+        display: inline-block;
+        margin-top: 80px;
+    }
+
+
+    .stats span {
+        display: block;
+        font-size: 11px;
+        font-family: 'Inter', sans-serif;
+        font-size: 700;
+        letter-spacing: 2px;
+        opacity: 50%;
+    }
+}
